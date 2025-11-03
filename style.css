@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(assetss/agra.jpg);
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    padding: 50px;
+    animation-name: bgchange;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.hero h2{
+    font-size: 100PX;
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    color: rgb(240, 240, 240);
+
+}
+.hero h2::after{
+    content: "INDIA";
+    animation-name: locations;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes locations {
+    0%{
+        content: 'INDIA';
+    }
+    10%{
+        content: 'USA';
+    }
+    20%{
+        content: 'AUSTRALIA';
+    }
+    30%{
+        content: 'EUROPE';
+    }
+    40%{
+        content: 'PARIS';
+    }
+    50%{
+        content: 'ITALY';
+    }
+    60%{
+        content: 'QUATAR';
+    }
+    70%{
+        content: 'DUBHAI';
+    }
+    80%{
+        content: 'SINGAPOR';
+    }
+    90%{
+        content: 'BANGKOK';
+    }
+    100%{
+        content: 'RUSSIA';
+    }
+}
+@keyframes zoom{
+    0%{
+        font-size: 0px;
+    }
+    100%{
+        font-size: 100px;
+        
+    }
+}
+@keyframes bgchange{
+    0%{
+        background-image: url(assetss/agra.jpg);
+    }
+    10%{
+        background-image: url(assetss/download.png);
+    }
+    20%{
+        background-image: url(assetss/australia.jpg);
+    }
+    30%{
+        background-image: url(assetss/europe.webp);
+    }
+    40%{
+        background-image: url(assetss/paris.jpg);
+    }
+    50%{
+        background-image: url(assetss/italy.jpg);
+    }
+    60%{
+        background-image: url(assetss/qatar.webp);
+    }
+    70%{
+        background-image: url(assetss/dubai.jpg);
+    }
+    80%{
+        background-image: url(assetss/singapor.avif);
+    }
+    90%{
+        background-image: url(assetss/bangkok.jpg);
+    }
+    100%{
+        background-image: url(assetss/russia.jpg);
+    }
+}
+
+/* card */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.cardimg{
+    height: 200px;
+    
+}
+.card{
+    object-fit: cover;
+    margin-bottom: 10px;
+
+}
+
+.card img:hover{
+    transform: scale(1.2);
+    transition: 2s;
+    border-radius: 10px;
+}
+.card:hover img{
+    transform: scale(1.2);
+    transition: 2s;
+}
+.card:hover{
+    box-shadow: 1px 1px 10px rgb(74, 71, 255);
+    overflow: hidden;
+
+}
+.card-fotter{
+    padding-left: 10px;
+}
+
+.banner1,.banner2,.banner3{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+.banner1{
+    background-image: url(assetss/banner1.jpg);
+}
+.banner2{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.596) ,rgba(0, 0, 255, 0.479)) , url(assetss/agra.jpg);
+}
+.banner3{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.596) ,rgba(0, 0, 255, 0.479)) ,url(assetss/banner2.jpg);
+}

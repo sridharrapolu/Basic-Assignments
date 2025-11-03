@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section 
+        class="navbar navbar-expand-lg navbar-light  fixed-top"
+    >
+        <div class="container">
+            <a class="navbar-brand" href="#"><h2>Navbar</h2></a>
+            <button
+                class="navbar-toggler hidden-lg-up"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            ></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page"
+                            ><h4>Home</h4>
+                            <span class="visually-hidden">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page"
+                            ><h4>About us</h4>
+                            <span class="visually-hidden">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#" > <h4>Concat Us</h4></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="dropdownId"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            >KnowMore</a
+                        >
+                        <div
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownId"
+                        >
+                            <a class="dropdown-item" href="#"
+                                >Action 1</a
+                            >
+                            <a class="dropdown-item" href="#"
+                                >Action 2</a
+                            >
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input
+                        class="form-control me-sm-2"
+                        type="text"
+                        placeholder="Search"
+                    >
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    </section>
+
+    <section class="hero">
+        <h2>“Explore the World”vibe. </h2>
+    </section>
+    <section class="container mt-5">
+        <div class="row ">
+            <div class="col-6">
+                <h1>Top Trending Destinations</h1>
+                <p>Explore the hottest travel spots around the globe.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="assetss/bangkok.jpg " style="width: 230px;" alt="">
+                    </div>
+                    <div class="card-footer">
+                        <h3 >Bangkok</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="assetss/agra.jpg" style="width: 230px;" alt="">
+                    </div>
+                    <div class="card-footer">
+                        <h3>Agra</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="assetss/qatar.webp" style="width: 230px;" alt="">
+                    </div>
+                    <div class="card-footer">
+                        <h3>Qatar</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="assetss/dubai.jpg " style="width: 230px;" alt="">
+                    </div>
+                    <div class="card-footer">
+                        <h3>Dubai</h3>
+                    </div>
+                </div>
+            </div>
+    </section>
+        <section class="container    p-0">
+        <div class="carousel slide" data-bs-ride="carousel" id="slidecontrol">
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <div class="banner1">
+                        <h4 style="padding-right: 10px;">Fall in Fascination with the Untamed Beauty of AUSTRALIA</h4>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="banner2">
+                        <h4  >Experience soul of INDIA</h4>    
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="banner3">
+                        <h4>Grab UP to <strong>50% off <strong></h4>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#slidecontrol" data-bs-slide="prev">
+                <p><i class="bi bi-arrow-left-circle-fill"></i></p>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#slidecontrol" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+    
+</body>
+</html>
